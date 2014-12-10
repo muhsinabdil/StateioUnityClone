@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-[RequireComponent(typeof(MeshFilter))]
+[RequireComponent(typeof(MeshFilter))] //! 
 [RequireComponent(typeof(MeshRenderer))]
 public class ArrowGenerator : MonoBehaviour
 {
-    public float stemLength;
+    public float stemLength; 
     public float stemWidth;
     public float tipLength;
     public float tipWidth;

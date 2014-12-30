@@ -28,6 +28,14 @@ public class HexGrid2 : MonoBehaviour
                  }
              } */
 
+        // Kameranın konumu
+        Vector3 cameraPosition = new Vector3((gridData.width * (gridData.cellSize * Mathf.Sqrt(3)) - gridData.cellSize * Mathf.Sqrt(3) / 2) / 2, Camera.main.transform.position.y, Camera.main.transform.position.z);
+
+        // Kamerayı grid'in x ekseninin tam ortasına yerleştir
+        Camera.main.transform.position = cameraPosition;
+
+
+        // camera orta noktası center
 
         for (int x = 0; x < gridData.width; x++)
         {

@@ -18,7 +18,7 @@ public class HexSelector : MonoBehaviour
                 //! önceki gridi eski haline çevir
                 if (lastGrid != null)
                 {
-                    lastGrid.GetComponent<MeshRenderer>().material.color = Color.green;
+                    lastGrid.GetComponent<MeshRenderer>().material.color = default(Color);
                 }
 
                 lastGrid = hit.collider.gameObject;
